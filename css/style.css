@@ -1,0 +1,91 @@
+*{
+background-color: #222;
+}
+
+h1, h2{
+    font-size: 60px;
+    font-family: "Nunito";
+    text-align: center;
+    margin: 5px;
+    color: white;
+}
+
+button {
+    display: block;
+    margin: auto;
+    align-items: center;
+    padding:.7rem 3rem;
+    background:rgb(161, 161, 161);
+    color:#fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+  }
+
+.btn:hover{
+    background: #008eecd8;
+}
+
+.container{
+    width: 600px;
+    margin:auto;
+}
+
+.tanah{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.tanah::after{
+    content: "";
+    display: block;
+    height: 100px;
+    width: 200px;
+    background: url(../img/tanah.png) bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    bottom: -30px;
+}
+
+.thanos{
+    width: 100%;
+    height: 100%;
+    background: url(../img/thanos.png) bottom center no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top:145px;
+    transition: top 0.4s;
+    
+}
+
+
+.tanah.muncul .thanos{
+    top: -4px;
+}
+
+
+/* Atur Responsive  */
+@media screen and (max-width: 500px) { 
+    h1, h2{
+        font-size: 30px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 569px) { 
+    h1, h2{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:768px){
+ 
+    h1{
+        font-size: 50px;
+    }
+ 
+ }
